@@ -43,19 +43,34 @@
         <!-- Лена конец -->
         <!-- Лиза начало -->
         <div class="contact-form">
-            <h2>Contact Us</h2>
-            <section class="contact-us">
-                <form>
-                    <input type="text" placeholder="Name">
-                    <input type="text" placeholder="Phone Number">
-                    <input type="text" placeholder="E-Mail">
-                    <input type="text" placeholder="Interested In">
-                    <textarea placeholder="Message"></textarea>
+            <h2 class="contact-form__h2">Contact Us</h2>
+            <section class="contact-form__contact-us">
+                <form class="contact-form__contact-us__input-section">
+                    <label for="Name"></label>
+                    <input class="contact-form__contact-us__input-section__input contact-form__contact-us__input-section__input_name" type="text" 
+                    id="Name"
+                    placeholder="Name">
+                    <label for="Phone Number"></label>
+                    <input class="contact-form__contact-us__input-section__input contact-form__contact-us__input-section__input_phone" type="text" 
+                    id="Phone Number"
+                    placeholder="Phone Number*">
+                    <label for="E-Mail"></label>
+                    <input class=" contact-form__contact-us__input-section__input contact-form__contact-us__input-section__input_email" type="text" 
+                    id="E-Mail"
+                    placeholder="E-Mail*">
+                    <label for="Intrested In"></label>
+                    <input class=" contact-form__contact-us__input-section__input contact-form__contact-us__input-section__input_interested" type="text" 
+                    id="Interested In"
+                    placeholder="Interested In">
+                    <label for="comment"></label>
+                    <textarea class="contact-form__contact-us__input-section__input contact-form__contact-us__input_textarea" 
+                    id="comment"
+                    placeholder="Message*"></textarea>
                 </form>
-                <img src="./assets/img/call.png" alt="Contact Us">
+                <img class="contact-form__contact-us__section-image" src="./assets/img/call.png" alt="Contact Us">
             </section>
+            <button class="contact-form__send-button">SEND EMAIL &#10230;</button>
         </div>
-        <button>SEND EMAIL &#10230;</button>
     </main>
 
     <footer>

@@ -3,18 +3,84 @@
     src: url(../fonts/Roboto-Regular.ttf);
 } 
 
-button {
+@font-face {
+    font-family: "Roboto-Light";
+    src: url(../fonts/Roboto-Light.ttf);
+}
+
+.contact-form__send-button {
     border: none;
     outline: none;
     display: inline-block;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1em;
     padding: 20px 30px;
     background: #333333;
     font-family: Roboto-Regular, sans-serif;
     color: white;
     letter-spacing: 0.25em;
     font-size: 0.5em;
+    margin-top: 8em;
 }
 
+.contact-form__send-button:hover {
+    background-color: #8D8D8D;
+}
+
+.contact-form__h2 {
+font-family: Roboto-Light, sans-serif;
+font-weight: 300;
+color: rgb(188, 188, 188);
+font-size: 3em;
+margin-bottom: 0;
+}
+
+.contact-form {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-form__contact-us__section-image {
+    width: 70%;
+    margin-left: 1em;
+    margin-top: 0.6em;
+}
+
+.contact-form__contact-us {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.contact-form__contact-us__input-section {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+
+}
+
+.contact-form__contact-us__input-section__input {
+    height: 2.5em;
+    font-size: smaller;
+    font-family: Roboto-Regular, sans-serif;
+    color: #8D8D8D;
+    border: none;
+    background-color: #F3F3F3;
+    margin-top: 0.6em;
+    letter-spacing: 0.1em;
+    outline:none;
+}
+
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+
+.contact-form__contact-us__input_textarea {
+    padding-top: 0.8em;
+    flex-grow: 1;
+}
