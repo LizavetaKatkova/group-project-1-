@@ -1,3 +1,20 @@
-
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+button {
+  border: none;
+  outline: none;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 20px 30px;
+  background: #333333;
+  font-family: Roboto-Regular, sans-serif;
+  color: white;
+  letter-spacing: 0.25em;
+  font-size: 0.5em;
+}
 
 /*# sourceMappingURL=style.css.map */
