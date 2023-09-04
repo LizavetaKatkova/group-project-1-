@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: 1s;
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url(../fonts/Roboto-Light.ttf);
+}
+
+// ------Здесь переменные-----
+// -------Шрифты------
+$roboto-r: "Roboto-Regular", sans-serif;
+$roboto-l: "Roboto-Light", sans-serif;
+// ---------Цвета--------
+$white: #fff;
+$black: #000;
+
+// --------Ограничивающие контейнеры-----
+$wrap: 1470px; //----это общее полотно, по макету 1440px, но +отступы по 15px-----
+$container: 1170px; //----контейнер с контентом----
+//----Выравнивание по центру----
+$mc: 0 auto; //----margin centr----
+//----Размер шрифта----
+$text: 16px;
+
+//-----Общие настройки----
+body {
+  background: $white;
+  font-family: $roboto-r;
+  color: $black;
+  font-size: $text;
+}
+
+.wrapper {
+  max-width: $wrap;
+  margin: $mc;
+  padding: 0 15px;
+}
+
+.container {
+  max-width: $container;
+  margin: $mc;
+}
+
+//-----Повторяющиеся блоки----
+.block-h2 {
+  color: var(--Gray-4, #bdbdbd);
+  font-family: $roboto-l;
+  font-size: 4em;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 64px;
+  margin: 0;
+}
+
+.button {
+  width: 222px;
+  height: 71px;
+  border: none;
+  outline: none;
+  display: inline-block;
+  text-decoration: none;
+  padding: 30px 35px;
+  background: #fff;
+  font-family: $roboto-r;
+  color: var(--Gray-1, #333);
+  line-height: 0.75em;
+  letter-spacing: 0.25em;
+  font-size: 0.75em;
+  transition: 1s;
+}
+.button:hover {
+  background-color: #8d8d8d;
+  color: #fff;
+}
+
+.button_black {
+  text-align: center;
+  background: #333;
+  color: #fff;
+}

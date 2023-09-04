@@ -1,44 +1,14 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-}
-
-@font-face {
-  font-family: "Roboto-Regular";
-  src: url(../fonts/Roboto-Regular.ttf);
-}
-
-@font-face {
-  font-family: "Roboto-Light";
-  src: url(../fonts/Roboto-Light.ttf);
-}
-
 .projects {
   display: flex;
   flex-direction: column;
-  max-width: 1170px;
-  margin: 0 auto;
+  margin-bottom: 7.5em;
 }
-
-.block-title {
-  color: var(--Gray-4, #bdbdbd);
-  font-family: Roboto-Light, sans-serif;
-  font-size: 4em;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 64px;
-}
-
 .wrapper__project-img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 3.875em;
 }
 
 .project__link {
@@ -84,11 +54,11 @@ a {
 }
 
 .project__text {
-  //   max-width: 160px;
   position: absolute;
   top: 15%;
   left: 15%;
   opacity: 0;
+  transition: 2s;
 }
 
 .project__link:hover .project__text {
@@ -114,4 +84,8 @@ a {
   line-height: 12px; /* 100% */
   letter-spacing: 2.4px;
   text-transform: uppercase;
+}
+
+.projects a {
+  align-self: flex-end;
 }
