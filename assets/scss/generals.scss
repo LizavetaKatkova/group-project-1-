@@ -70,6 +70,12 @@ body {
   margin: $mc;
 }
 
+@media (max-width: 1170px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
 //-----Повторяющиеся блоки----
 .block-h2 {
   color: var(--Gray-4, #bdbdbd);
