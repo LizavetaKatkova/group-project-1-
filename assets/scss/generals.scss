@@ -23,10 +23,22 @@ a {
   src: url(../fonts/Roboto-Light.ttf);
 }
 
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url(../fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+
 // ------Здесь переменные-----
 // -------Шрифты------
 $roboto-r: "Roboto-Regular", sans-serif;
 $roboto-l: "Roboto-Light", sans-serif;
+$roboto-m: "Roboto-Medium", sans-serif;
+$roboto-b: "Roboto-Bold", sans-serif;
 // ---------Цвета--------
 $white: #fff;
 $black: #000;
