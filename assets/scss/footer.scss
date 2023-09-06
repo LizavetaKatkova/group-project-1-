@@ -7,12 +7,13 @@
 }
 
 .footer {
-    height: 40vh;
+    height: 23em;
     max-width: $wrap;
-    margin: 0;
+    margin-bottom: 0;
     margin-top: 4em;
     display: flex;
     flex-direction: column;
+    flex: 0 0 auto;
 }
 
 .footer__info {
@@ -24,14 +25,18 @@
     padding-right: 4em;
 }
 
+.footer__info__logo-block__logo-section,
+.footer-nav,
+.contacts {
+    padding-right: 4em;
+}
+
 .footer__info__logo-block {
-    border: 1px solid white;
     display: flex;
     justify-content: space-between;
 }
 
 .footer-nav {
-    border: 1px solid white;
     display: flex;
     flex-direction: column;
     font-family: $roboto-b;
@@ -42,12 +47,16 @@
 }
 
 .contacts {
-    border: 1px solid white;
+    max-width: min-content;
 }
 .footer-nav__list__item,
 .contacts__list__item {
-    margin-top: 1em;
+    margin-top: 1.5em;
     font-family: $roboto-m;
+}
+
+.contacts__list__item {
+    position: relative;
 }
 
 .contacts__list {
@@ -56,6 +65,16 @@
 
 .contacts__list__item a {
     color: $white;
+}
+
+.contacts__list__item_telephone {
+    padding-top: 1em;
+}
+
+.contacts__list__item__img {
+    width: 11%;
+    position: absolute;
+    left: -1.7em;
 }
 
 .footer__info__logo-block__logo-section {
@@ -72,20 +91,32 @@ width: 15%;
 }
 
 .sm-logos {
-    margin-top: 1em;
+    margin-top: 1.5em;
     display: flex;
     justify-content: space-between;
 }
 
 .sm-logos__img {
-    width: 8%;
+    width: 15px;
     height: 15px;
 }
 
 .sm-logos__img_facebook {
-    width: 5%;
+    width: 10px;
 }
 
 .sm-logos__img_twitter {
-    width: 13%;
+    width: 20px;
+}
+
+.footer-line {
+    border-bottom: 1px solid #C8C8C8;
+    opacity: 50%;
+}
+
+.ending-par {
+    color: #C8C8C8;
+    text-align: center;
+    opacity: 50%;
+    font-size: smaller;
 }
