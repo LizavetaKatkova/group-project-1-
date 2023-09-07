@@ -21,7 +21,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 9vw;
 }
 .buttons{
     width: 140px;
@@ -55,18 +54,6 @@
     display: flex;
     flex-direction: column-reverse;
 }
-.button {
-    border: none;
-    outline: none;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1em;
-    font-family: Roboto-Regular, sans-serif;
-    color: var(--Gray-1, #333);
-    letter-spacing: 0.25em;
-    font-size: 0.75em;
-}
 .project__button-left{
     background: #FFF;
 }
@@ -81,6 +68,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: Roboto-Regular, sans-serif;
+    color: var(--Gray-1, #333);
+    letter-spacing: 0.25em;
+    transition: 1s;
 }
 .project__page-button{
     background: #FFF;
@@ -88,8 +82,27 @@
     width: 222px;
     height: 71px;
     padding: 20px 30px;
+    border: none;
+    outline: none;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: Roboto-Regular, sans-serif;
+    color: var(--Gray-1, #333);
+    letter-spacing: 0.25em;
+    font-size: 0.75em;
+    transition: 1s;
 }
-.button:hover{
+.project__page-button:hover{
+    background-color:rgb(188, 188, 188);
+    color: #fff;
+}
+.project__button-left:hover{
+    background-color:rgb(188, 188, 188);
+    color: #fff;
+}
+.project__button-right:hover{
     background-color:rgb(188, 188, 188);
     color: #fff;
 }
