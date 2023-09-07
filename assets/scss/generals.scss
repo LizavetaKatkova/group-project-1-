@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 ul {
   list-style: none;
 }
@@ -43,6 +39,7 @@ $roboto-r: "Roboto-Regular", sans-serif;
 $roboto-l: "Roboto-Light", sans-serif;
 $roboto-m: "Roboto-Medium", sans-serif;
 $roboto-b: "Roboto-Bold", sans-serif;
+
 // ---------Цвета--------
 $white: #fff;
 $black: #000;
@@ -61,12 +58,6 @@ body {
   font-family: $roboto-r;
   color: $black;
   font-size: $text;
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  flex-grow: 1;
 }
 
 .wrapper {
@@ -86,6 +77,18 @@ main {
   }
 }
 
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: none;
+  }
+}
+
 //-----Повторяющиеся блоки----
 .block-h2 {
   color: var(--Gray-4, #bdbdbd);
@@ -95,6 +98,13 @@ main {
   font-weight: 300;
   line-height: 64px;
   margin: 0;
+}
+
+@media (max-width: 767px) {
+  .block-h2 {
+    font-size: 2.8em;
+    line-height: 45px;
+  }
 }
 
 .button {
@@ -122,4 +132,11 @@ main {
   text-align: center;
   background: #333;
   color: #fff;
+}
+
+@media (max-width: 767px) {
+  .button {
+    width: 190px;
+    padding: 30px 20px;
+  }
 }
