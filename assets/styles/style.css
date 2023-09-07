@@ -72,6 +72,12 @@ body {
   margin: 0;
 }
 
+@media (max-width: 767px) {
+  .block-h2 {
+    font-size: 2.8em;
+    line-height: 45px;
+  }
+}
 .button {
   width: 222px;
   height: 71px;
@@ -100,6 +106,12 @@ body {
   color: #fff;
 }
 
+@media (max-width: 767px) {
+  .button {
+    width: 190px;
+    padding: 30px 20px;
+  }
+}
 .contact-form__send-button:hover {
   background-color: #8d8d8d;
 }
@@ -233,6 +245,19 @@ body {
   line-height: 25px;
 }
 
+@media (max-width: 767px) {
+  .about {
+    max-height: none;
+    margin-bottom: 5em;
+  }
+  .wrapper-img {
+    display: none;
+  }
+  .about__text {
+    max-width: 100%;
+    margin-left: 1em;
+  }
+}
 .main-focus {
   display: flex;
   flex-direction: column;
@@ -290,6 +315,28 @@ body {
     padding-left: 1.8em;
   }
 }
+@media (max-width: 767px) {
+  .main-focus {
+    margin-bottom: 5em;
+  }
+  .wrapper__main-focus {
+    margin-top: 0.3em;
+  }
+  .main-focus__text {
+    max-width: 100%;
+    margin: 0;
+  }
+  .main-focus__text-big {
+    font-size: 7em;
+  }
+  .main-focus__text-small {
+    padding-left: 0.5em;
+  }
+  .main-focus__text-small {
+    font-size: 1em;
+    line-height: 20px;
+  }
+}
 .projects {
   display: flex;
   flex-direction: column;
@@ -307,7 +354,7 @@ body {
 .project__link {
   min-height: 15.9375em;
   position: relative;
-  margin-bottom: 1.875em;
+  margin-bottom: 1.7em;
 }
 
 .project__link:hover:before {
@@ -360,7 +407,7 @@ body {
 
 .project__title {
   color: #fff;
-  font-family: Roboto-Regular, sans-serif;
+  font-family: "Roboto-Regular", sans-serif;
   font-size: 64px;
   font-style: normal;
   font-weight: 700;
@@ -370,7 +417,7 @@ body {
 
 .project__subtitle {
   color: #fff;
-  font-family: Roboto-Regular, sans-serif;
+  font-family: "Roboto-Regular", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -383,6 +430,33 @@ body {
   align-self: flex-end;
 }
 
+@media (max-width: 992px) {
+  .project__link:nth-child(3) {
+    display: none;
+  }
+  .project__link:nth-child(4) {
+    min-width: 48.72%;
+  }
+  .project__link:nth-child(5) {
+    min-width: 48.72%;
+  }
+}
+@media (max-width: 630px) {
+  .projects {
+    margin-bottom: 5em;
+  }
+  .wrapper__project-img {
+    margin-top: 2em;
+  }
+  .project__link:nth-child(1),
+  .project__link:nth-child(2) {
+    min-width: 100%;
+  }
+  .project__link:nth-child(4),
+  .project__link:nth-child(5) {
+    display: none;
+  }
+}
 .footer {
   background-color: var(--Gray-1, #333);
 }
