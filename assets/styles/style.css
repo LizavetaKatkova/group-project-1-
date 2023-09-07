@@ -363,13 +363,6 @@ main {
 
 .footer {
   background-color: var(--Gray-1, #333);
-}
-
-.sm-logos__img {
-  width: 2em;
-}
-
-.footer {
   height: 23em;
   max-width: 1470px;
   margin-bottom: 0;
@@ -386,10 +379,10 @@ main {
   padding-top: 2.5em;
   padding-left: 4em;
   padding-right: 4em;
+  margin-bottom: 3em;
 }
 
 .footer__info__logo-block__logo-section,
-.footer-nav,
 .contacts {
   padding-right: 4em;
 }
@@ -399,9 +392,16 @@ main {
   justify-content: space-between;
 }
 
-.footer-nav {
-  display: flex;
-  flex-direction: column;
+.footer-nav__list {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-nav__listname {
+  margin: 0;
+}
+
+.footer-nav__list__item_information {
   font-family: "Roboto-Bold", sans-serif;
 }
 
@@ -410,7 +410,24 @@ main {
 }
 
 .contacts {
+  padding-right: 4em;
   max-width: min-content;
+  display: flex;
+  flex-direction: column;
+  margin-left: 8em;
+}
+
+.contacts__listname {
+  margin: 0;
+}
+
+.contacts__listname,
+.footer-nav__listname {
+  font-family: "Roboto-Bold", sans-serif;
+}
+
+.contacts__list {
+  margin-top: 0;
 }
 
 .footer-nav__list__item,
