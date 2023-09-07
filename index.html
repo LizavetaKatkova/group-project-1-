@@ -12,37 +12,35 @@
 <body>
     <div class="wrapper">
         <div class="container">
-            <!-- Диана начало -->
-            <header class="header" id="header">
-                <nav class="nav">
-                    <div class="nav__logo">
-                        <img src="./assets/img/logo.png" alt="" class="nav__logo-img">
-                    </div>
-                    <ul class="nav__menu">
-                        <li class="nav__menu-link">MAIN</li>
-                        <li class="nav__menu-link">GALLERY</li>
-                        <li class="nav__menu-link">PROJECTS</li>
-                        <li class="nav__menu-link">CERTIFICATIONS</li>
-                        <li class="nav__menu-link">CONTACTS</li>
-                    </ul>
-                </nav>
-            </header>
-
-            <main>
-
-                <div class="project">
-                    <h1 class="project__tittle">PROJECT Lorum</h1>
-                    <button class="project__button-left">
-                        <img src="./assets/img/left.png" alt="стрелка влево" class="project__button-img">
-                    </button>
-                    <button class="project__button-right">
-                        <img src="./assets/img/right.png" alt="стрелка вправо" class="project__button-img">
-                    </button>
-                    <div class="project__page">
-                        <img src="./assets/img/house1.png" alt="проект" class="project__page-img">
-                        <button class="button project-page-button">VIEW PROJECT &#10230;</button>
-                    </div>
                     <!-- Диана конец -->
+                    <header class="header">
+        <nav class="nav">
+            <a href="#" class="nav__logo">
+                <img src="./assets/img/logo.svg" alt="" class="nav__logo-img">
+                <img src="./assets/img/logo-text.svg" alt="" class="nav__logo-text">
+            </a>
+            <ul class="nav__menu">
+                <li class="nav__menu-link"><a href="#" id="main-link">MAIN</a></li>
+                <li class="nav__menu-link"><a href="#">GALLERY</a></li>
+                <li class="nav__menu-link"><a href="#">PROJECTS</a></li>
+                <li class="nav__menu-link"><a href="#">CERTIFICATIONS</a></li>
+                <li class="nav__menu-link"><a href="#">CONTACTS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <section class="project">
+                <h1 class="project__title">PROJECT <br> <span id="lorum">Lorum</span></h1>
+                <div class="buttons"><button class="button project__button-left">&#10229;</button>
+                <button class="button project__button-right">&#10230;</button></div>
+                <div  class="project__number"><p class="project__number-1">01</p><p class="project__number-slash"></p><p class="project__number-2">02</p></div>
+            </section>
+            <section class="project__page">
+                <img src="./assets/img/house1.png" alt="проект" class="project__page-img">
+                <button class="button project__page-button">VIEW PROJECT &#10230;</button>
+            </section>
+        </div>
 
 
                     <!-- Лена начало -->

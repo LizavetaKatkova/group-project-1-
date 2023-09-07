@@ -582,4 +582,199 @@ body {
   font-size: smaller;
 }
 
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url(../fonts/Roboto-Light.ttf);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.nav {
+  width: 1440px;
+  height: 102px;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav__logo {
+  width: 470px;
+  padding-left: 136px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.nav__logo-img, .nav__logo-text {
+  width: 70px;
+}
+
+.nav__logo-text {
+  position: absolute;
+}
+
+.nav__menu {
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px; /* 100% */
+  letter-spacing: 2.4px;
+  padding: 30px 30px;
+  font-family: Roboto-Regular, sans-serif;
+  color: #333;
+}
+
+.nav__menu-link {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover, :visited, :link {
+  color: #333;
+}
+
+#main-link {
+  padding: 3px 9px;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url(../fonts/Roboto-Light.ttf);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 120px;
+}
+
+.project {
+  width: 535px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 9vw;
+}
+
+.buttons {
+  width: 140px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.project__number {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 140px;
+  height: 100px;
+  font-family: Roboto-Light, sans-serif;
+  font-weight: 300;
+  color: rgb(188, 188, 188);
+  font-size: 2em;
+}
+
+.project__number-slash {
+  height: 40px;
+  border-right: 2px solid;
+  transform: rotate(40deg);
+}
+
+.project__page-img {
+  width: 770px;
+  height: 829px;
+}
+
+.project__page {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.button {
+  border: none;
+  outline: none;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  font-family: Roboto-Regular, sans-serif;
+  color: var(--Gray-1, #333);
+  letter-spacing: 0.25em;
+  font-size: 0.75em;
+}
+
+.project__button-left {
+  background: #FFF;
+}
+
+.project__button-right {
+  background: #F9F9F9;
+}
+
+.project__button-left, .project__button-right {
+  width: 53px;
+  height: 53px;
+  border: 1px solid #F2F2F2;
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project__page-button {
+  background: #FFF;
+  position: absolute;
+  width: 222px;
+  height: 71px;
+  padding: 20px 30px;
+}
+
+.button:hover {
+  background-color: rgb(188, 188, 188);
+  color: #fff;
+}
+
+.project__title {
+  font-family: Roboto-Light, sans-serif;
+  font-weight: 300;
+  color: rgb(188, 188, 188);
+  font-size: 4em;
+}
+
+#lorum {
+  color: var(--Gray-1, #333);
+  font-family: Roboto-Regular, sans-serif;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px; /* 100% */
+}
+
 /*# sourceMappingURL=style.css.map */
