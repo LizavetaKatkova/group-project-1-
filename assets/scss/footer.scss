@@ -150,3 +150,51 @@ width: 15%;
     opacity: 50%;
     font-size: smaller;
 }
+
+@media (max-width: 630px) {
+
+    .footer__info__logo-block__logo-section {
+        display: none;
+    }
+
+    .contacts {
+        padding-right: 2em;
+        margin-left: 5em;
+    }
+
+    .sm-logos {
+        flex-direction: column;
+    }
+
+    .sm-logos a {
+        padding-top: 1em;
+    }
+}
+
+@media (max-width: 489px) {
+
+    .footer {
+        height: fit-content;
+    }
+
+    .footer__info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__info__logo-block {
+        flex-direction: column;
+    }
+
+    .footer-nav__list {
+        display: flex;
+    }
+
+    .footer-nav__list__item a {
+        margin-left: 1em;
+    }
+
+    .footer-nav__list__item_main > a {
+        margin-left: 0;
+    }
+}
