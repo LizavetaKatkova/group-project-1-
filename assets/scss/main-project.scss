@@ -1,11 +1,3 @@
-@font-face {
-    font-family: "Roboto-Regular";
-    src: url(../fonts/Roboto-Regular.ttf);
-}
-@font-face {
-    font-family: "Roboto-Light";
-    src: url(../fonts/Roboto-Light.ttf);
-}
 *,
 *::before,
 *::after {
@@ -36,7 +28,7 @@
     justify-content: space-between;
     width: 140px;
     height: 100px;
-    font-family: Roboto-Light, sans-serif;
+    font-family: $roboto-l, sans-serif;
     font-weight: 300;
     color: rgb(188, 188, 188);
     font-size: 2em;
@@ -71,7 +63,7 @@
     text-align: center;
     text-decoration: none;
     font-size: 1em;
-    font-family: Roboto-Regular, sans-serif;
+    font-family: $roboto-r, sans-serif;
     color: var(--Gray-1, #333);
     letter-spacing: 0.25em;
     transition: 1s;
@@ -88,7 +80,7 @@
     text-align: center;
     text-decoration: none;
     font-size: 1em;
-    font-family: Roboto-Regular, sans-serif;
+    font-family: $roboto-r, sans-serif;
     color: var(--Gray-1, #333);
     letter-spacing: 0.25em;
     font-size: 0.75em;
@@ -107,14 +99,14 @@
     color: #fff;
 }
 .project__title {
-    font-family: Roboto-Light, sans-serif;
+    font-family: $roboto-l, sans-serif;
     font-weight: 300;
     color: rgb(188, 188, 188);
     font-size: 4em;
 }
 #lorum{
     color: var(--Gray-1, #333);
-    font-family: Roboto-Regular, sans-serif;
+    font-family: $roboto-r, sans-serif;
     font-size: 1em;
     font-style: normal;
     font-weight: 700;

@@ -635,14 +635,6 @@ body {
     margin-left: 0;
   }
 }
-@font-face {
-  font-family: "Roboto-Regular";
-  src: url(../fonts/Roboto-Regular.ttf);
-}
-@font-face {
-  font-family: "Roboto-Light";
-  src: url(../fonts/Roboto-Light.ttf);
-}
 *,
 *::before,
 *::after {
@@ -683,20 +675,13 @@ body {
   letter-spacing: 2.4px;
   padding-top: 30px;
   padding-left: 0;
-  font-family: Roboto-Regular, sans-serif;
+  font-family: "Roboto-Regular", sans-serif, sans-serif;
   color: #333;
 }
 
 .nav__menu-link {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover, :visited, :link {
   color: #333;
+  list-style: none;
 }
 
 #main-link {
@@ -705,14 +690,10 @@ a:hover, :visited, :link {
   border-bottom: 1px solid #333;
 }
 
-@font-face {
-  font-family: "Roboto-Regular";
-  src: url(../fonts/Roboto-Regular.ttf);
+#main-link, #gallery-link, #project-link, #certifications-link, #contacts-link {
+  color: #333;
 }
-@font-face {
-  font-family: "Roboto-Light";
-  src: url(../fonts/Roboto-Light.ttf);
-}
+
 *,
 *::before,
 *::after {
@@ -747,7 +728,7 @@ a:hover, :visited, :link {
   justify-content: space-between;
   width: 140px;
   height: 100px;
-  font-family: Roboto-Light, sans-serif;
+  font-family: "Roboto-Light", sans-serif, sans-serif;
   font-weight: 300;
   color: rgb(188, 188, 188);
   font-size: 2em;
@@ -788,7 +769,7 @@ a:hover, :visited, :link {
   text-align: center;
   text-decoration: none;
   font-size: 1em;
-  font-family: Roboto-Regular, sans-serif;
+  font-family: "Roboto-Regular", sans-serif, sans-serif;
   color: var(--Gray-1, #333);
   letter-spacing: 0.25em;
   transition: 1s;
@@ -806,7 +787,7 @@ a:hover, :visited, :link {
   text-align: center;
   text-decoration: none;
   font-size: 1em;
-  font-family: Roboto-Regular, sans-serif;
+  font-family: "Roboto-Regular", sans-serif, sans-serif;
   color: var(--Gray-1, #333);
   letter-spacing: 0.25em;
   font-size: 0.75em;
@@ -829,7 +810,7 @@ a:hover, :visited, :link {
 }
 
 .project__title {
-  font-family: Roboto-Light, sans-serif;
+  font-family: "Roboto-Light", sans-serif, sans-serif;
   font-weight: 300;
   color: rgb(188, 188, 188);
   font-size: 4em;
@@ -837,7 +818,7 @@ a:hover, :visited, :link {
 
 #lorum {
   color: var(--Gray-1, #333);
-  font-family: Roboto-Regular, sans-serif;
+  font-family: "Roboto-Regular", sans-serif, sans-serif;
   font-size: 1em;
   font-style: normal;
   font-weight: 700;

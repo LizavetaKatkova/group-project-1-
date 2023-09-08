@@ -1,11 +1,3 @@
-@font-face {
-    font-family: "Roboto-Regular";
-    src: url(../fonts/Roboto-Regular.ttf);
-}
-@font-face {
-    font-family: "Roboto-Light";
-    src: url(../fonts/Roboto-Light.ttf);
-}
 *,
 *::before,
 *::after {
@@ -41,22 +33,20 @@
     letter-spacing: 2.4px;
     padding-top: 30px;
     padding-left: 0;
-    font-family: Roboto-Regular, sans-serif;
+    font-family: $roboto-r, sans-serif;
     color: #333;
 }
 .nav__menu-link{
-    list-style: none;
-}
-a{
-    text-decoration: none;
-}
-a:hover, :visited, :link{
     color: #333;
+    list-style: none;
 }
 #main-link{
     padding: 3px 9px;
     border-top: 1px solid #333;
     border-bottom: 1px solid #333;
+}
+#main-link, #gallery-link, #project-link, #certifications-link, #contacts-link{
+    color: #333;
 }
 
 
