@@ -9,7 +9,7 @@
     margin-bottom: 120px;
 }
 .project{
-    width: 535px;
+    width: 30vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,7 +34,7 @@
     font-size: 2em;
 }
 .project__number-slash{
-    height: 40px;
+    height: 40%;
     border-right: 2px solid;
     transform: rotate(40deg)
 }
@@ -112,3 +112,23 @@
     font-weight: 700;
     line-height: 64px; /* 100% */
 }
+
+@media (max-width: 992px) {
+    .content{
+        max-width: 750px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5vh;
+    }
+    .project__number{
+        display: none;
+    }
+    #lorum{
+        padding-left: 4vw;
+    }
+    .buttons{
+        margin-left: 7vw;
+    }
+}
+
