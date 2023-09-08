@@ -625,14 +625,22 @@ body {
   .footer__info__logo-block {
     flex-direction: column;
   }
+  .footer-nav {
+    width: 200px;
+  }
   .footer-nav__list {
+    width: 200px;
     display: flex;
+    flex-wrap: wrap;
   }
   .footer-nav__list__item a {
     margin-left: 1em;
   }
   .footer-nav__list__item_main > a {
     margin-left: 0;
+  }
+  .contacts {
+    margin: 0;
   }
 }
 *,
