@@ -3,7 +3,7 @@
   flex-direction: column;
   margin-bottom: 7.5em;
 }
-.wrapper__project-img {
+.wrapper__projects-img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -11,13 +11,13 @@
   margin-top: 3.875em;
 }
 
-.project__link {
+.projects__link {
   min-height: 15.9375em;
   position: relative;
   margin-bottom: 1.7em;
 }
 
-.project__link:hover:before {
+.projects__link:hover:before {
   position: absolute;
   content: "";
   top: 0;
@@ -28,32 +28,32 @@
   background: var(--Gray-1, #333);
 }
 
-.project__link:nth-child(1) {
+.projects__link:nth-child(1) {
   min-width: 48.72%;
   background: url(../img/img12.png) no-repeat;
 }
 
-.project__link:nth-child(2) {
+.projects__link:nth-child(2) {
   min-width: 48.72%;
   background: url(../img/img15.png) no-repeat;
 }
 
-.project__link:nth-child(3) {
+.projects__link:nth-child(3) {
   min-width: 23%;
   background: url(../img/img16.png) no-repeat;
 }
 
-.project__link:nth-child(4) {
+.projects__link:nth-child(4) {
   min-width: 40%;
   background: url(../img/img17.png) no-repeat;
 }
 
-.project__link:nth-child(5) {
+.projects__link:nth-child(5) {
   min-width: 31.6%;
-  background: url(/assets/img/img18.png) no-repeat;
+  background: url(../img/img18.png) no-repeat;
 }
 
-.project__text {
+.projects__text {
   position: absolute;
   top: 15%;
   left: 15%;
@@ -61,11 +61,11 @@
   transition: 2s;
 }
 
-.project__link:hover .project__text {
+.projects__link:hover .projects__text {
   opacity: 1;
 }
 
-.project__title {
+.projects__title {
   color: #fff;
   font-family: $roboto-r;
   font-size: 64px;
@@ -75,7 +75,7 @@
   margin: 0;
 }
 
-.project__subtitle {
+.projects__subtitle {
   color: #fff;
   font-family: $roboto-r;
   font-size: 12px;
@@ -91,14 +91,14 @@
 }
 
 @media (max-width: 992px) {
-  .project__link:nth-child(3) {
+  .projects__link:nth-child(3) {
     display: none;
   }
-  .project__link:nth-child(4) {
+  .projects__link:nth-child(4) {
     min-width: 48.72%;
   }
 
-  .project__link:nth-child(5) {
+  .projects__link:nth-child(5) {
     min-width: 48.72%;
   }
 }
@@ -107,15 +107,15 @@
   .projects {
     margin-bottom: 5em;
   }
-  .wrapper__project-img {
+  .wrapper__projects-img {
     margin-top: 2em;
   }
-  .project__link:nth-child(1),
-  .project__link:nth-child(2) {
+  .projects__link:nth-child(1),
+  .projects__link:nth-child(2) {
     min-width: 100%;
   }
-  .project__link:nth-child(4),
-  .project__link:nth-child(5) {
+  .projects__link:nth-child(4),
+  .projects__link:nth-child(5) {
     display: none;
   }
 }
