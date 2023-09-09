@@ -62,8 +62,6 @@
 
 #main-link{
     padding: 3px 9px;
-    border-top: 1px solid #333;
-    border-bottom: 1px solid #333;
 }
 #main-link, #gallery-link, #project-link, #certifications-link, #contacts-link{
     color: #333;
@@ -74,7 +72,11 @@
     display: none;
 }
 
-
+@media(max-width: 1024px){
+    .nav{
+        width: 90vw;
+}
+}
 @media (max-width: 992px) {
     .nav{
         max-width: 750px;

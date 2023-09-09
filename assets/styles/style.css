@@ -751,8 +751,6 @@ body {
 
 #main-link {
   padding: 3px 9px;
-  border-top: 1px solid #333;
-  border-bottom: 1px solid #333;
 }
 
 #main-link, #gallery-link, #project-link, #certifications-link, #contacts-link {
@@ -765,6 +763,11 @@ body {
   display: none;
 }
 
+@media (max-width: 1024px) {
+  .nav {
+    width: 90vw;
+  }
+}
 @media (max-width: 992px) {
   .nav {
     max-width: 750px;
@@ -1035,6 +1038,36 @@ body {
     height: 20px;
     font-size: 0.5em;
     padding: 20px 10px;
+  }
+}
+@media (max-width: 1024px) {
+  .project__page-img {
+    width: 90%;
+    height: 90%;
+  }
+}
+@media (max-width: 630px) {
+  .project__title {
+    text-align: center;
+    margin-left: auto;
+  }
+  #lorum {
+    padding: 0;
+  }
+  .buttons {
+    margin-left: 65px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 489px) {
+  .project__title {
+    font-size: 2em;
+  }
+  .buttons {
+    width: 50%;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    margin-top: 0;
   }
 }
 
