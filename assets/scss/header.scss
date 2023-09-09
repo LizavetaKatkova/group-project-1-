@@ -1,10 +1,5 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
 .nav{
-    width: 1440px;
+    width: 1170px;
     height: 102px;
     display: flex;
     flex-direction: row;
@@ -48,6 +43,12 @@
 #main-link, #gallery-link, #project-link, #certifications-link, #contacts-link{
     color: #333;
 }
+#check-menu{
+    width: 55px;
+    height: 35px;
+    display: none;
+}
+
 
 @media (max-width: 992px) {
     .nav{
@@ -61,4 +62,84 @@
     }
 
 }
-
+@media (max-width: 767px){
+    .nav__logo{
+        margin-left: 30px;
+    }
+    .nav__burger{
+        margin: auto;
+        margin-right: 40px;
+        width: 150px;
+        position: relative;
+        color: #333;
+        text-align: end;
+        height: 40px;
+    }
+    #main-link{
+        border: none;
+    }
+    .check-label{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+    .burger-line{
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        width: 35px;
+        height: 2px;
+        transition: .3s all;
+        background-color: #333;
+    }
+    .burger-line:nth-of-type(2), .burger-line:nth-of-type(3){
+        top: 18px;
+    }
+    .burger-line:nth-of-type(4){
+        top: 28px;
+    }
+    .nav__menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        max-height: 0;
+        font-size: 0;
+        overflow: hidden;
+        transform: translateY(100%);
+        transition: .3s all;
+    }
+    .nav__menu-link{
+        display: block;
+        width: 100%;
+        padding: 10px;
+        color: #333;
+        background-color: #fff;
+        border: 1px solid rgb(188, 188, 188);
+    }
+    .nav__menu-link:hover{
+        background-color: rgb(188, 188, 188);
+    }
+    #check-menu:checked ~ .nav__menu{
+        max-height: 500px;
+        font-size: 10px;
+    }
+    #check-menu:checked ~ .burger-line:nth-of-type(1),
+    #check-menu:checked ~ .burger-line:nth-of-type(4){
+        display: none;
+    }
+    #check-menu:checked ~ .burger-line:nth-of-type(2){
+        transform: rotate(45deg);
+    }
+    #check-menu:checked ~ .burger-line:nth-of-type(3){
+        transform: rotate(-45deg);
+    }
+    .project{
+        margin-top: 0;
+    }
+}
