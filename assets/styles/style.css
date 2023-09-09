@@ -724,6 +724,31 @@ body {
   list-style: none;
 }
 
+.nav__menu-link > a {
+  position: relative;
+  color: #484848;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.nav__menu-link > a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 1.5px;
+  background-color: black;
+}
+
+.nav__menu-link > a:hover:before {
+  width: 100%;
+}
+
+.nav__menu-link > a::before {
+  transition: width 0.35s;
+}
+
 #main-link {
   padding: 3px 9px;
   border-top: 1px solid #333;
