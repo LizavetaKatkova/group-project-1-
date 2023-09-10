@@ -183,6 +183,12 @@ width: 15%;
         flex-direction: column;
     }
 
+    .footer-nav__listname,
+    .contacts__listname,
+    .footer__info__socials_name {
+        display: none;
+    }
+
     .footer__info__logo-block {
         flex-direction: column;
     }
